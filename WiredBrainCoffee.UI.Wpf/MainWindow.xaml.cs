@@ -18,5 +18,11 @@ namespace WiredBrainCoffee.UI.Wpf
             _coffeeMachine.MakeCappuccino();
             txtCappuccinoCounter.Text = _coffeeMachine.CounterCappuccino.ToString();
         }
+
+        private void ButtonShowStoredStateClick(object sender, RoutedEventArgs e)
+        {
+            _coffeeMachine.ShowStoredState();
+            //_coffeeMachine.sh
+        }
     }
 }

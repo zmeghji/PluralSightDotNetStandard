@@ -11,6 +11,7 @@ namespace WiredBrainCoffee.ConsoleApp
             coffeeMachine.MakeCappuccino();
             coffeeMachine.MakeCappuccino();
             Console.WriteLine($"Counter cappuccino: {coffeeMachine.CounterCappuccino}");
+            coffeeMachine.ShowStoredState();
         }
     }
 }
