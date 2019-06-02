@@ -35,15 +35,16 @@ namespace WiredBrainCoffee.Storage
             {
                 jsonString = File.ReadAllText(_filename);
             }
-            var window = new System.Windows.Window
-            {
-                Title = "Store JSON",
-                Content = jsonString,
-                WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
-                Width = 300,
-                Height = 300
-            };
-            window.Show();
+            Console.WriteLine($"Store JSON: {jsonString}");
+            //var window = new System.Windows.Window
+            //{
+            //    Title = "Store JSON",
+            //    Content = jsonString,
+            //    WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
+            //    Width = 300,
+            //    Height = 300
+            //};
+            //window.Show();
         }
     }
 }
