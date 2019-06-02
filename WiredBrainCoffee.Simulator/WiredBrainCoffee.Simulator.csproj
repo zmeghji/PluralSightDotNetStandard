@@ -1,11 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  
   <PropertyGroup>
-    <TargetFrameworks>net461;netstandard1.3</TargetFrameworks>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Wired Brain Coffee</Authors>
+    <Company>Wired Brain Coffee</Company>
+    <Description>Use this package to simulate a coffee machine</Description>
+    <PackageIconUrl>https://thomasclaudiushuber.com/wiredbraincoffee.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WiredBrainCoffee.Storage\WiredBrainCoffee.Storage.csproj" />
+    <PackageReference Include="WiredBrainCoffee.Storage" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
